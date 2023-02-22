@@ -1,0 +1,7 @@
+.todoItem {
+    display: flex;
+    background-color: bisque;
+    padding: 10px;
+    font-size:20px;
+  }
+  

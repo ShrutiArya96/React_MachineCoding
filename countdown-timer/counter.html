@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <style>
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .headers {
+            width: 100%;
+            justify-content: space-around;
+            display: flex;
+        }
+        .heading {
+            padding: 26px 26px 3px 26px;
+        }
+        .counter {
+            width: fit-content;
+        }
+        .counter-time {
+            display: flex;
+        }
+        .text {
+            padding: 10px;
+            font-size: 30px;
+        }
+        .counter-actions {
+            display: flex;
+        }
+        .action {
+            width: 150px;
+            background-color: blueviolet;
+            color: aliceblue;
+            font-size: 15px;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px;
+            border: none;
+        }
+        .input {
+            border: none;
+            text-align: center;
+            font-size: 35px;
+            width: 100px;
+        }
+        .input:focus {
+            border: none;
+        }
+    </style>
+<body>
+    <div class="counter">
+        <div class="headers">
+            <h3 class="heading">Hours</h3>
+            <h3 class="heading">Minutes</h3>
+            <h3 class="heading">Seconds</h3>
+        </div>
+        <div class="counter-time">
+            <div class="text counter-hr">
+                <input type="number" class="input" id="counter-hour" value="00"/>
+            </div>
+            <span class="text">:</span>
+            <div class="text counter-min">
+                <input type="number" class="input" id="counter-minutes" value="00"/>
+            </div>
+            <span class="text">:</span>
+            <div class="text counter-sec">
+                <input type="number" class="input" id="counter-seconds" value="00"/>
+            </div>
+        </div>
+        <div class="text counter-actions">
+            <button class="action counter-start" id="start-counter">
+                Start
+            </button>
+            <button class="action counter-reset" id="reset-counter">
+                Reset
+            </button>
+        </div>
+    </div>
+
+    <script src="counter.js"></script>
+</body>
+
+</html>
