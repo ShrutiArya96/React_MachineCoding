@@ -1,0 +1,19 @@
+.container {
+    width: 70%;
+    height: 600px;
+    background-color: rgb(226, 226, 226);
+    border: 1px solid black;
+    padding: 20px;
+    overflow: scroll;
+    margin-top: 50px;
+}
+
+.movie-title {
+    text-align: center;
+    background-color: #0057f8;
+    width: 100%;
+    font-size: 25px;
+    color: white;
+    height: 100px;
+    margin-bottom: 10px;
+}
