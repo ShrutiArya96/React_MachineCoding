@@ -1,0 +1,11 @@
+.product-card {
+    background-color: rgb(227, 230, 230);
+    max-width: 400px;
+}
+
+.product-card-image {
+    object-fit: cover;
+    height: 300px;
+    width: 80%;
+    padding: 10px;
+}
