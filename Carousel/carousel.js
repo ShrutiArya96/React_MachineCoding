@@ -40,6 +40,7 @@ carousel = (function() {
             images[i].id = '';
         }
         images[cur].id = 'current-image'
+        images[cur].children[0].style.display='';
     }
     function setActiveButton() {
         let btnContainer = el("#slider-btns");
@@ -78,6 +79,7 @@ carousel = (function() {
             div.dataset.imgId = i;
             let imgEl = `<img src="${img}"  alt="" class='slider-image' loading='lazy'>`;
             div.innerHTML = imgEl;
+            div.children[0].style.display = i == 0 ? 'block':'none';
             hold.appendChild(div);
         })
         let cont = el('#slider-images');
