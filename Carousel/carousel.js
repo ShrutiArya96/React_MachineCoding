@@ -6,7 +6,8 @@ let images = ["https://source.unsplash.com/random?landscape,mountain",
 "https://source.unsplash.com/random?landscape,dessert"];
 
 carousel = (function() {
-    let cur = 0
+    let cur = 0;
+    let autoSlide = null;
     function el(selector) {
         return document.querySelectorAll(selector)[0];
     }
@@ -56,6 +57,7 @@ carousel = (function() {
             cur = id;
             setCurrentImage();
             setActiveButton();
+            clearInterval(autoSlide)
         }
     }
     function addCarouselButtons() {
@@ -86,11 +88,15 @@ carousel = (function() {
         cont.appendChild(hold);
         setActiveButton();
     }
+    function startCarousel() {
+       autoSlide = setInterval(nextImage, 2000);
+    }
     function main() {
         el('#next-btn').addEventListener('click', nextImage);
         el('#prev-btn').addEventListener('click', prevImage);
         addCarouselButtons();
         addImages();
+        startCarousel();
     }
     return {
         'main': main
