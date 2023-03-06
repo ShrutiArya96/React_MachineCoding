@@ -1,0 +1,12 @@
+.btn-select {
+    width: 15px;
+    height: 15px;
+    border: 1px solid black;
+    background-color: transparent;
+    border-radius: 15px;
+    margin: 10px;
+    cursor: pointer;
+}
+.active {
+    background-color: black;
+}

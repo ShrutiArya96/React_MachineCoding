@@ -1,0 +1,39 @@
+.image {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+#displayed-image {
+    flex: 1 0;
+    width: 100%;
+}
+
+.imageCotainer {
+    width: 0%;
+    height: 100%;
+    transition: all 0.3s;
+}
+
+.slider-container {
+    display: flex;
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.action-btn {
+    margin: 10px;
+    padding: 5px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
